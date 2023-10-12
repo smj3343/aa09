@@ -7,18 +7,14 @@ void setup() {
 }
 
 void loop() {
-  int temp_value = analogRead(TMP36_INPUT);
-  float voltage = temp_value * 5.0 * 1000;
-  voltage /= 1023.0;
+  int value = analogRead(TMP36_INPUT);
+  float voltage = value * 5.0 * 1000.0/1023.0;
   float tempC = (voltage -500) / 10 ;
-
-  int cds_value = analogRead(CDS_INPUT);
-  int lux = int(luminosity(cds_value));
-
   Serial.print(tempC);
   Serial.print(",");
-  Serial.println(lux);
- 
+
+ int value2 = analogRead(CDS_INPUT);
+ Serial.println(int(luminosity(value2))); 
   delay(1000);
 }
 
