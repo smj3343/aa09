@@ -1,0 +1,19 @@
+{
+  "name": "cds_tmp36",
+  "version": "1.0.0",
+  "description": "cds_tmp36_node.js",
+  "main": "cds_tmp36_node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cds_tmp36",
+    "node"
+  ],
+  "author": "aa09",
+  "license": "MIT",
+  "dependencies": {
+    "serialport": "^9.2.4",
+    "socket.io": "^2.4.1"
+  }
+}
